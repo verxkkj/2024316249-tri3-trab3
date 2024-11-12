@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+  font-family: 'Roboto', sans-serif;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  color: #FFF;
+  background-color: rgb(255, 90, 164);
+}
+
+body {
+  margin: 0;
+  border: 0;
+}
+
+
+header {
+  background-image: linear-gradient(120deg, rgb(255, 69, 153), #ffa2d5);
+  margin-bottom: 1rem;
+  transform-origin: 0 0;
+  color: #FFF;
+  padding: 2rem 5rem;
+
+  &::before {
+    content: ""
+  }
+}
+
+main {
+  background-color: transparent;
+
+  &::before {
+    content: ""
+  }
+}
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  border: 0;
+}
+
+main p {
+  padding: 0 1rem;
+  color: #333;
+}
+
+main .gallery {
+  border: none;
+  gap: 5px
+}
+
+main .gallery>div {
+  border: none;
+  transition: .15s;
+  position: relative;
+  border-radius: 5px;
+
+  &>img {
+    top: 0;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
+main .gallery>div:hover {
+  transform-origin: center;
+  transform: scale(1.5);
+  width: 100%;
+  padding-top: 100%;
+}
+
+main .gallery:hover>div:not(:hover) {
+  transform: scale(.95);
+  filter: grayscale(100%);
+  transition: .15s;
+}
+
+aside {
+  background-color: transparent;
+  border-right: 1px solid #ffffff;
+  background-image: linear-gradient(120deg, rgb(255, 69, 153), #ffa2d5);
+  margin-bottom: 1rem;
+  transform-origin: 0 0;
+  color: #FFF;
+  padding: 1rem 2rem;
+
+  &::before {
+    content: ""
+  }
+}
+
+aside>div {
+  position: sticky;
+  top: 0;
+}
+
+aside a {
+  display: block;
+  text-decoration: none;
+  padding: 1rem;
+  transition: .2s;
+}
+
+aside a:hover {
+  background-color: rgba(0, 0, 0, .15);
+}
+
+footer {
+  margin-top: 1rem;
+}
+
+dialog {
+  min-width: auto;
+}
+
+.gallery-image-modal .bt-close {
+  cursor: pointer;
+  display: grid;
+  place-items: center;
+  outline: none;
+}
+
+.gallery-image-modal .bt-close::after {
+  color: black;
+}
+
+footer {
+  border-radius: 50px 50px 0 0;
+  text-align: center;
+}
