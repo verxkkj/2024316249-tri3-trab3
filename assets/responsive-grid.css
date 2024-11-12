@@ -51,7 +51,7 @@ main .example {
 }
 
 main .example > div {
-  border: 1px solid #000;
+  border: 4px solid #ffffff;
   height: 100%;
   position: relative;
   overflow: hidden;
@@ -61,7 +61,7 @@ main .example > div {
 main .example > div:hover {
   transform: scale(1.5);
   z-index: 99;
-  box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 0 10px 5px rgba(255, 255, 255, 0.5);
   cursor: pointer;
   border-radius: 50%;
 }
@@ -78,7 +78,7 @@ main .example > div img {
 
 .gallery-image-modal {
   border-radius: 5px;
-  border: 1px solid black;
+  border: 1px solid rgb(255, 255, 255);
   position: fixed;
   overflow: unset;
 }
